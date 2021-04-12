@@ -4,6 +4,7 @@ import java.time.Instant;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.orangetalents.vaccineapi.entities.Records;
 import com.orangetalents.vaccineapi.entities.User;
 
 public class UserDTO {
@@ -33,7 +34,10 @@ public class UserDTO {
 		this.cpf = entity.getCpf();
 		this.email = entity.getEmail();
 		this.birthDate = entity.getBirthDate();
-		entity.getRecords().forEach(records -> this.records.add(new RecordsDTO(records)));
+	}
+	
+	public UserDTO(User entity, Set<Records> records) {
+		entity.getRecords().forEach(rec -> this.records.add(new RecordsDTO(rec)));
 	}
 
 	public Long getId() {
