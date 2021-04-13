@@ -7,7 +7,7 @@ DAPI desenvolvida para um guia / blog de construção de APIs utilizando tecnolo
 
 A aplicação consiste em um cadastro de usuários e cadastro de vacinas aplicadas. Cada usuário possui uma coleção de vacinas recebidas e o registro de vacina, por sua vez, possui uma referência do usuário que a recebeu. 
 
-bit.ly/2rufnxf
+https://bit.ly/3tjP9U4
 
 ## Modelo Conceitual
 ![Modelo Conceitual](https://raw.githubusercontent.com/thiago-vcosta/vaccine-api/main/modelo-conceitual.png)
