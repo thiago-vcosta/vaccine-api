@@ -37,6 +37,7 @@ public class UserDTO {
 	}
 	
 	public UserDTO(User entity, Set<Records> records) {
+		this(entity);
 		entity.getRecords().forEach(rec -> this.records.add(new RecordsDTO(rec)));
 	}
 
